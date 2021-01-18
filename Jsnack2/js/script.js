@@ -55,9 +55,13 @@ var zucchine = [
 ];
 // console.log(zucchine);
 
+// Creiamo una variabile della somma totale dei pesi delle varie zucchine, deve partire da 0 per sommare con il ciclo for.
 var sommaPeso = 0;
 
+// Cicliamo ogni peso delle zucchine che viene sommato di volta in volta passando al peso successivo.
 for (var i = 0; i < zucchine.length; i++) {
-  console.log(zucchine[i].peso);
-  // sommaPeso = sommaPeso + i;
+  // console.log(zucchine[i].peso);
+  sommaPeso = sommaPeso + zucchine[i].peso;
 }
+
+console.log('Il peso totale di tutte le zucchine è di: ', sommaPeso);
