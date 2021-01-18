@@ -60,6 +60,11 @@ var zucchineCorte = [];
 var zucchineLunghe = [];
 
 for (var i = 0; i < zucchine.length; i++) {
-  
-
+  if (zucchine[i].lunghezza <= 15) {
+    zucchineCorte.push(zucchine[i]);
+  } else {
+    zucchineLunghe.push(zucchine[i]);
+  }
 }
+console.log('Le zuccchine che misurano meno di 15 cm sono: ', zucchineCorte);
+console.log('Le zuccchine che misurano più di 15 cm sono: ',zucchineLunghe);
